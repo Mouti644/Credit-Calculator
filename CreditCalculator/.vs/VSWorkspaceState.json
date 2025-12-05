@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CreditCalculator",
+    "\\CreditCalculator\\App_Start",
+    "\\CreditCalculator\\Services"
+  ],
+  "SelectedNode": "\\CreditCalculator\\App_Start\\WebApiConfig.cs",
+  "PreviewInSolutionExplorer": false
+}

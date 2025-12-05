@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  animation: slideDown 0.6s ease-out;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Form Section */
+.form-section {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.form-section h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.currency {
+  position: absolute;
+  left: 15px;
+  color: #999;
+  font-weight: 600;
+}
+
+.suffix {
+  position: absolute;
+  right: 15px;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 15px 12px 35px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+input[type="number"]::placeholder {
+  color: #ccc;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn-calculate {
+  width: 100%;
+  padding: 14px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-calculate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+}
+
+.btn-calculate:active {
+  transform: translateY(0);
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #c33;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* Results Section */
+.results-section {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.6s ease-out;
+}
+
+.results-section h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.result-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.result-card.primary {
+  grid-column: span 2;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.result-label {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.result-card.primary .result-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.result-value {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.result-value.highlight {
+  color: #667eea;
+}
+
+.result-card.primary .result-value-large {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Section */
+.table-section {
+  margin-top: 40px;
+}
+
+.table-section h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.amortization-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.amortization-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.amortization-table th {
+  padding: 15px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.amortization-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.amortization-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.amortization-table tbody tr:hover {
+  background: #f5f7fa;
+}
+
+.amortization-table tbody tr.highlight-row {
+  background: #f0f3ff;
+  font-weight: 600;
+}
+
+.cell-month {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.cell-number {
+  text-align: right;
+  font-family: 'Courier New', monospace;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-card.primary {
+    grid-column: span 1;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .form-section,
+  .results-section {
+    padding: 25px;
+  }
+
+  .amortization-table th,
+  .amortization-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}

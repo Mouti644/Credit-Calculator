@@ -1,0 +1,59 @@
+VÉRIFICATION DES CALCULS AVEC L'EXEMPLE EXCEL
+=============================================
+
+DONNÉES D'ENTRÉE:
+- Montant d'achat : 120 000
+- Fonds propres (Apport) : 20 000
+- Durée : 240 mois
+- Taux annuel : 2.40%
+
+ÉTAPE 1: Frais d'achat
+Formule: 10% du montant AU-DESSUS de 50 000
+Calcul: (120 000 - 50 000) × 0.10 = 70 000 × 0.10 = 7 000
+✓ Frais d'achat = 7 000
+
+ÉTAPE 2: Montant à emprunter BRUT
+Formule: MontantAchat + FraisAchat - FondsPropes
+Calcul: 120 000 + 7 000 - 20 000 = 107 000
+✓ Montant à emprunter BRUT = 107 000
+
+ÉTAPE 3: Frais d'hypothèque
+Formule: MontantEmprunteBrut × 0.02
+Calcul: 107 000 × 0.02 = 2 140
+✓ Frais d'hypothèque = 2 140
+
+ÉTAPE 4: Montant à emprunter NET
+Formule: MontantEmprunteBrut + FraisHypotheque
+Calcul: 107 000 + 2 140 = 109 140
+✓ Montant à emprunter NET = 109 140
+
+ÉTAPE 5: Taux mensuel
+Formule: (1 + taux annuel)^(1/12) - 1
+Taux annuel en décimal: 2.40 / 100 = 0.024
+Calcul: (1 + 0.024)^(1/12) - 1 = 1.024^(0.08333) - 1 = 0.00197938...
+En pourcentage arrondi à 3 décimales: 0.197938 × 100 = 0.197938% ≈ 0.198%
+✓ Taux mensuel = 0.198%
+
+ÉTAPE 6: Mensualité constante
+Formule: Capital × TauxMensuel × (1 + TauxMensuel)^Durée / ((1 + TauxMensuel)^Durée - 1)
+Taux mensuel en décimal: 0.00197938
+Capital: 109 140
+Durée: 240
+
+Calcul:
+(1 + 0.00197938)^240 = 1.00197938^240 = 1.61169...
+Numerateur: 109 140 × 0.00197938 × 1.61169 = 109 140 × 0.00319266 = 348.10...
+Denominateur: 1.61169 - 1 = 0.61169
+Mensualité: 348.10 / 0.61169 ≈ 569.02
+
+✓ Mensualité = 569.02 (arrondi à 2 décimales)
+
+TABLEAU D'AMORTISSEMENT - PREMIERS MOIS:
+Mois | Solde Début | Mensualité | Intérêt | Capital Remboursé | Solde Fin
+-----|-------------|------------|---------|-------------------|----------
+  1  | 109 140,00  | 569,02     | 215.29  | 353,73            | 108 786,27
+  2  | 108 786,27  | 569,02     | 214.73  | 354,29            | 108 431,98
+  3  | 108 431,98  | 569,02     | 214.17  | 354,85            | 108 077,13
+...
+
+Le Backend va maintenant calculer automatiquement tous ces montants !

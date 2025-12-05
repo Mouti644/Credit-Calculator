@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|c:\\users\\moutii\\desktop\\creditcalculator\\creditcalculator\\controllers\\creditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|solutionrelative:creditcalculator\\controllers\\creditcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Models\\CreditResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|solutionrelative:CreditCalculator\\Models\\CreditResult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Models\\AmortizationItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|solutionrelative:CreditCalculator\\Models\\AmortizationItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Services\\CreditCalculatorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{557E2C9C-E657-41AE-AFBF-F9CA921174BB}|CreditCalculator\\CreditCalculator.csproj|solutionrelative:CreditCalculator\\Services\\CreditCalculatorService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreditController.cs",
+              "DocumentMoniker": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Controllers\\CreditController.cs",
+              "RelativeDocumentMoniker": "CreditCalculator\\Controllers\\CreditController.cs",
+              "ToolTip": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Controllers\\CreditController.cs",
+              "RelativeToolTip": "CreditCalculator\\Controllers\\CreditController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T21:19:41.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreditCalculatorService.cs",
+              "DocumentMoniker": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Services\\CreditCalculatorService.cs",
+              "RelativeDocumentMoniker": "CreditCalculator\\Services\\CreditCalculatorService.cs",
+              "ToolTip": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Services\\CreditCalculatorService.cs",
+              "RelativeToolTip": "CreditCalculator\\Services\\CreditCalculatorService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:04:58.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreditResult.cs",
+              "DocumentMoniker": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Models\\CreditResult.cs",
+              "RelativeDocumentMoniker": "CreditCalculator\\Models\\CreditResult.cs",
+              "ToolTip": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Models\\CreditResult.cs",
+              "RelativeToolTip": "CreditCalculator\\Models\\CreditResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:57:11.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AmortizationItem.cs",
+              "DocumentMoniker": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Models\\AmortizationItem.cs",
+              "RelativeDocumentMoniker": "CreditCalculator\\Models\\AmortizationItem.cs",
+              "ToolTip": "C:\\Users\\Moutii\\Desktop\\CreditCalculator\\CreditCalculator\\Models\\AmortizationItem.cs",
+              "RelativeToolTip": "CreditCalculator\\Models\\AmortizationItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:55:58.276Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
